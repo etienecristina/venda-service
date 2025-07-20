@@ -10,4 +10,5 @@ import java.util.UUID;
 @Repository
 public interface VendaRepository extends JpaRepository<VendaModel, UUID> {
     Optional<VendaModel> findByVendaId(UUID vendaId);
+    Optional<VendaModel> findByCodigoPagamento(String codigoPagamento);
 }

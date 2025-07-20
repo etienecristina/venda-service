@@ -8,7 +8,7 @@ import java.util.UUID;
 
 public interface VendaService {
     VendaModel saveVenda(VendaModel vendaModel);
-    void cancelVenda(VendaModel vendaModel);
     Optional<VendaModel> findByVendaId(UUID vendaId);
     List<VendaModel> listAllVendas();
+    void notificationProcessPayment(String codigoPagamento, String statusPagamento);
 }
