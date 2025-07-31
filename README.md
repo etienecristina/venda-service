@@ -1,4 +1,4 @@
-## Serviço de Vendas de Veículos
+## Serviço de Gerenciamento de Vendas de Veículos
 Este é um serviço de backend desenvolvido em Java usando Spring Boot, focado na gestão do ciclo de vida das vendas de veículos. Ele se integra com outros microsserviços e utiliza o Stripe para processar pagamentos de forma segura e eficiente.
 
 ## Funcionalidades Principais
