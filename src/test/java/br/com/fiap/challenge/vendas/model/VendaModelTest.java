@@ -34,7 +34,6 @@ class VendaModelTest {
         vendaModel.setStripeCheckoutSessionId(stripeCheckoutSessionId);
         vendaModel.setStripePaymentLinkUrl(stripePaymentLinkUrl);
 
-
         // THEN
         assertThat(vendaModel.getVendaId()).isEqualTo(vendaId);
         assertThat(vendaModel.getVeiculoId()).isEqualTo(veiculoId);
