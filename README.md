@@ -19,6 +19,8 @@ Gestão de Vendas: Oferece endpoints para consultar, editar e cancelar vendas, c
 
 **Banco de Dados:** PostgreSQL
 
+**Cobertura de Código:** JaCoCo, com regra de cobertura mínima
+
 **Persistência:** Spring Data JPA e Hibernate
 
 **Pagamentos:** Stripe API (stripe-java 29.3.0)
@@ -91,7 +93,7 @@ DB_USERNAME=seu_usuario_postgres
 DB_PASSWORD=sua_senha_postgres
 
 # Configurações do Serviço de Veículos
-URL_VEICULO_SERVICE=http://localhost:8080/veiculos
+URL_VEICULO_SERVICE=http://localhost:8082/veiculos
 AUTH_TOKEN=seu_token_de_autenticacao_para_servico_de_veiculos
 
 # **Chaves da API do Stripe**
