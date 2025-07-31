@@ -1,0 +1,30 @@
+name: Validação de Código e Testes (CI)
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build_and_test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v3
+
+      - name: Configurar o ambiente Java (JDK 17)
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: 'maven'
+
+      - name: Instalar dependências e compilar
+        run: mvn clean install
+
+      - name: Executar testes e checar cobertura mínima de 80%
+        run: mvn test

@@ -67,7 +67,7 @@ GET /vendas/veiculos-vendidos: Lista todos os veículos que já foram vendidos.
 Clone o Repositório:
 ``` Bash 
 
-git clone git@github.com:etienecristina/veiculo-service.git
+git clone git@github.com:etienecristina/venda-service.git
 ```
 
 **Configure as Variáveis de Ambiente:**
