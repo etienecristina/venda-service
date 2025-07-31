@@ -28,7 +28,6 @@ public class WebhookControllerRefatorado {
 
     @Value("${stripe.webhook.secret}")
     private String webhookSecret;
-
     private final VendaService vendaService;
     private final ConsultaVeiculoService consultaVeiculoService;
 
