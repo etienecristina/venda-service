@@ -26,5 +26,5 @@ jobs:
       - name: Instalar dependências e compilar
         run: mvn clean install
 
-      - name: Executar testes e checar cobertura mínima de 80%
+      - name: Executar testes
         run: mvn test
