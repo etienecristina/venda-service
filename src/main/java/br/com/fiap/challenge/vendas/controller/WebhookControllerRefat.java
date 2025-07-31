@@ -24,14 +24,14 @@ import java.util.UUID;
 @RequestMapping("/webhook")
 @CrossOrigin(origins = "*", maxAge = 360)
 @Slf4j
-public class WebhookControllerRefatorado {
+public class WebhookControllerRefat {
 
     @Value("${stripe.webhook.secret}")
     private String webhookSecret;
     private final VendaService vendaService;
     private final ConsultaVeiculoService consultaVeiculoService;
 
-    public WebhookControllerRefatorado(VendaService vendaService, ConsultaVeiculoService consultaVeiculoService) {
+    public WebhookControllerRefat(VendaService vendaService, ConsultaVeiculoService consultaVeiculoService) {
         this.vendaService = vendaService;
         this.consultaVeiculoService = consultaVeiculoService;
     }
