@@ -35,7 +35,6 @@ public class VendaModel {
     private String agreementId;
     @Column(unique = true)
     private Long paymentId;
-
     @Column(unique = true)
     private String stripeCheckoutSessionId;
     private String stripePaymentLinkUrl;
