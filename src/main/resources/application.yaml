@@ -19,3 +19,11 @@ spring:
 veiculos:
     service:
         url: ${URL_VEICULO_SERVICE}
+        auth-token: ${AUTH_TOKEN}
+
+stripe:
+    api:
+        secretKey: ${SECRET_KEY}
+    webhook:
+        secret: whsec_8puE5Tzv2NANSVGWq5Sw7jQdzf3YBePJ
+

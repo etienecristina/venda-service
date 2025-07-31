@@ -31,4 +31,11 @@ public class VendaModel {
     @Column(nullable = false)
     @Enumerated(value = EnumType.STRING)
     private PagamentoStatus pagamentoStatus;
+    private String agreementId;
+    @Column(unique = true)
+    private Long paymentId;
+
+    @Column(unique = true)
+    private String stripeCheckoutSessionId;
+    private String stripePaymentLinkUrl;
 }
