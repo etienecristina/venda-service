@@ -38,4 +38,5 @@ public class VendaModel {
     @Column(unique = true)
     private String stripeCheckoutSessionId;
     private String stripePaymentLinkUrl;
+
 }
